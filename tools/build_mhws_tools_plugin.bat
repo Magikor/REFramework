@@ -26,10 +26,15 @@ if errorlevel 1 (
 
 cd /d "%~dp0.." || exit /b 1
 
-REM Fresh configure to ensure cmkr regenerates CMakeLists with our plugin target.
+REM Only wipe the build folder if the cached generator doesn't match.
 if exist "build64_mhws_tools\CMakeCache.txt" (
-  echo Removing old build64_mhws_tools - generator mismatch cleanup...
-  rmdir /s /q "build64_mhws_tools"
+  findstr /c:"Visual Studio 18 2026" "build64_mhws_tools\CMakeCache.txt" >nul
+  if errorlevel 1 (
+    echo Removing old build64_mhws_tools - generator mismatch cleanup...
+    rmdir /s /q "build64_mhws_tools"
+  ) else (
+    echo Reusing existing build64_mhws_tools...
+  )
 )
 cmake -S . -B build64_mhws_tools -G "Visual Studio 18 2026" -A x64 -DCMAKE_GENERATOR_INSTANCE="%VSFULL%"
 if errorlevel 1 exit /b 1

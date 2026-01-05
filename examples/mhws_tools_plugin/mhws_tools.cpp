@@ -26,6 +26,16 @@ static std::wstring to_wstring(const std::string& s) {
     return out;
 }
 
+static std::string to_utf8_string(const std::filesystem::path& p) {
+    const auto u8 = p.u8string();
+    std::string out;
+    out.reserve(u8.size());
+    for (const char8_t c : u8) {
+        out.push_back(static_cast<char>(c));
+    }
+    return out;
+}
+
 static std::filesystem::path get_game_root() {
     wchar_t exePath[MAX_PATH]{};
     GetModuleFileNameW(nullptr, exePath, MAX_PATH);
@@ -69,7 +79,7 @@ static sol::object launch_path(sol::this_state s, const std::filesystem::path& a
         return make_result(s, false, "ShellExecute failed (code " + std::to_string((int)code) + ")");
     }
 
-    return make_result(s, true, std::string(absPath.u8string()));
+    return make_result(s, true, to_utf8_string(absPath));
 }
 
 static void on_lua_state_created(lua_State* L) {
