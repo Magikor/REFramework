@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\examples\mhws_tools_plugin\mhws_tools.cpp">
+      <Filter>examples\mhws_tools_plugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{64A09508-0C8F-3655-B426-940C91380BE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\mhws_tools_plugin">
+      <UniqueIdentifier>{2A77D5B1-87B4-3088-B149-CAC8AD8D4326}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

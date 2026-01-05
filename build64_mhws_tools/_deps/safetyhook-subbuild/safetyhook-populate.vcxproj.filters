@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\ed2875ae0e33a4d391813e704a0a19ca\safetyhook-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\54548b251d55f102b367003213ca49b4\safetyhook-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\e98aae104ac10a08a347d3bce8134f9d\safetyhook-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-subbuild\CMakeFiles\safetyhook-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{03BD6C5B-E2A9-3439-A931-ECEC7BF7E881}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

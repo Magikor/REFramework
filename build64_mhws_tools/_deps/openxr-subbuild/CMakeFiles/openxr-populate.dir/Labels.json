@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/openxr-populate"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/c4c78a6f581c8a74c921fc73ff1cb747/openxr-populate.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/50802b89b0a2cd721f551c3ac98188e8/openxr-populate-complete.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-build.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-configure.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-download.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-install.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-patch.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-test.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"openxr-populate"
+		],
+		"name" : "openxr-populate"
+	}
+}

@@ -1,0 +1,150 @@
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-MKDIR.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcfgdir=/Debug -P D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/tmp/kananlib-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/tmp/kananlib-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-UPDATE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/tmp/kananlib-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-PATCH.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-BUILD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-INSTALL.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\3F0A58FBD362CE006A9B12869CDF0AF7\KANANLIB-POPULATE-TEST.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\7BA1B4DB851414E5020A0A12DF40D02E\KANANLIB-POPULATE-COMPLETE.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E make_directory D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/CMakeFiles/Debug/kananlib-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/kananlib-populate-prefix/src/kananlib-populate-stamp/Debug/kananlib-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKEFILES\A1A1EB48B400E1D331EBCC5CD3E33D45\KANANLIB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\KANANLIB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild -BD:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/kananlib-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

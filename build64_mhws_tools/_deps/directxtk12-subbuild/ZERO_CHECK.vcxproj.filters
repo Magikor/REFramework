@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\directxtk12-subbuild\CMakeFiles\1e6b592b20e0d815b89ea09a86e86175\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1F28740A-B1EB-3981-BAAD-9EA1E2DB859F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

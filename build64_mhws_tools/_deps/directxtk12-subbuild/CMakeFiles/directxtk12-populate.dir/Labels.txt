@@ -1,0 +1,14 @@
+# Target labels
+ directxtk12-populate
+# Source files and their labels
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/directxtk12-populate
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/1e6b592b20e0d815b89ea09a86e86175/directxtk12-populate.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/8f4736ce6c94601d737d54b61dcfb532/directxtk12-populate-complete.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-build.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-configure.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-download.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-install.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-mkdir.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-patch.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-test.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/264bd94f83bd14b7f505c26ee67540f8/directxtk12-populate-update.rule

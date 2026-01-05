@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B49F0D10-14C9-32E1-852C-B5C4DDD3DB53}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>asmjit-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-mkdir.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcfgdir=/Debug -P D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/tmp/asmjit-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/tmp/asmjit-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\asmjit-populate-gitinfo.txt;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/tmp/asmjit-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\tmp\asmjit-populate-gitupdate.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\asmjit-populate-update-info.txt;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\asmjit-populate-patch-info.txt;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-configure.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\tmp\asmjit-populate-cfgcmd.txt;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-build.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-install.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-test.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\69d9b71163dd56040dd527541cd2f322\asmjit-populate-complete.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'asmjit-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E make_directory D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/Debug/asmjit-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/asmjit-populate-prefix/src/asmjit-populate-stamp/Debug/asmjit-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-install;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-mkdir;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-download;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-update;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-patch;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-configure;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\src\asmjit-populate-stamp\Debug\asmjit-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\Debug\asmjit-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\f87d5d87608465dc82ecf9f3b7b25056\asmjit-populate.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\Debug\asmjit-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\asmjit-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild -BD:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\PatchInfo.txt.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\RepositoryInfo.txt.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\UpdateInfo.txt.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\cfgcmd.txt.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\gitclone.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\gitupdate.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\mkdirs.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\asmjit-populate-prefix\tmp\asmjit-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\asmjit-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{20A5E842-36EB-3AAA-892D-88D2DE210884}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

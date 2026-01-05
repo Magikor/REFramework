@@ -1,0 +1,150 @@
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-MKDIR.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcfgdir=/Debug -P D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/tmp/openxr-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/tmp/openxr-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-UPDATE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/tmp/openxr-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-PATCH.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-BUILD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-INSTALL.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\F840EAE0DE497F6B483D01AC7D19CB6F\OPENXR-POPULATE-TEST.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\50802B89B0A2CD721F551C3AC98188E8\OPENXR-POPULATE-COMPLETE.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E make_directory D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/Debug/openxr-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/openxr-populate-prefix/src/openxr-populate-stamp/Debug/openxr-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKEFILES\C4C78A6F581C8A74C921FC73FF1CB747\OPENXR-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\OPENXR-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild -BD:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/safetyhook-populate"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/e98aae104ac10a08a347d3bce8134f9d/safetyhook-populate.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/54548b251d55f102b367003213ca49b4/safetyhook-populate-complete.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-build.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-configure.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-download.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-install.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-patch.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-test.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/safetyhook-subbuild/CMakeFiles/ed2875ae0e33a4d391813e704a0a19ca/safetyhook-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"safetyhook-populate"
+		],
+		"name" : "safetyhook-populate"
+	}
+}

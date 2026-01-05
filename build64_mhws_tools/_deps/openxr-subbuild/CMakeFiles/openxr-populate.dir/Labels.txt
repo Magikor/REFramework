@@ -1,0 +1,14 @@
+# Target labels
+ openxr-populate
+# Source files and their labels
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/openxr-populate
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/c4c78a6f581c8a74c921fc73ff1cb747/openxr-populate.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/50802b89b0a2cd721f551c3ac98188e8/openxr-populate-complete.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-build.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-configure.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-download.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-install.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-mkdir.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-patch.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-test.rule
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/f840eae0de497f6b483d01ac7d19cb6f/openxr-populate-update.rule

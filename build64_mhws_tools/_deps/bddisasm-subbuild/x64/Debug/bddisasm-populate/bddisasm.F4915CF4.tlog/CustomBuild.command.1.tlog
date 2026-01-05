@@ -1,0 +1,150 @@
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-MKDIR.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcfgdir=/Debug -P D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/tmp/bddisasm-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/tmp/bddisasm-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-UPDATE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/tmp/bddisasm-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-PATCH.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-BUILD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-INSTALL.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\C2696C777D1F150F33DF21D6B7F3734F\BDDISASM-POPULATE-TEST.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\DF8E556C69384FA6CA2F80F65864CF84\BDDISASM-POPULATE-COMPLETE.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E make_directory D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/CMakeFiles/Debug/bddisasm-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/bddisasm-populate-prefix/src/bddisasm-populate-stamp/Debug/bddisasm-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKEFILES\3F2436E8EF96395B6E87B4A826C18208\BDDISASM-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\BDDISASM-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild -BD:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/bddisasm-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

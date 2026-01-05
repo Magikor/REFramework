@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lapi.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lauxlib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lbaselib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lcode.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lcorolib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lctype.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ldblib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ldebug.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ldo.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ldump.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lfunc.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lgc.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\linit.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\liolib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\llex.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lmathlib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lmem.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\loadlib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lobject.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lopcodes.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\loslib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lparser.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lstate.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lstring.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lstrlib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ltable.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ltablib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\ltm.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lundump.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lutf8lib.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lvm.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\lua\src\lzio.c">
+      <Filter>dependencies\lua\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{0D002B5E-6FBC-3199-9767-27E954F443AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\lua">
+      <UniqueIdentifier>{D8AFF657-4D7A-3FED-BFAB-4F8E71EE0F4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\lua\src">
+      <UniqueIdentifier>{6E1ECD1F-B1E7-3B50-B708-1F5F7FBF7D9F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

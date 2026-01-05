@@ -1,0 +1,150 @@
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-MKDIR.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcfgdir=/Debug -P D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/tmp/directxtk12-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/tmp/directxtk12-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-UPDATE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\directxtk12-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/tmp/directxtk12-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-PATCH.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\directxtk12-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-BUILD.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\directxtk12-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-INSTALL.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\directxtk12-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\264BD94F83BD14B7F505C26EE67540F8\DIRECTXTK12-POPULATE-TEST.RULE
+setlocal
+cd D:\MHWS\REFramework\build64_mhws_tools\_deps\directxtk12-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\8F4736CE6C94601D737D54B61DCFB532\DIRECTXTK12-POPULATE-COMPLETE.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E make_directory D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/Debug/directxtk12-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E touch D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate-prefix/src/directxtk12-populate-stamp/Debug/directxtk12-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\1E6B592B20E0D815B89EA09A86E86175\DIRECTXTK12-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild -BD:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

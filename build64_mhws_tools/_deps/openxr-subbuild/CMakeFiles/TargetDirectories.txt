@@ -1,0 +1,3 @@
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/openxr-populate.dir
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/CMakeFiles/ZERO_CHECK.dir

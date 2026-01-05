@@ -415,3 +415,11 @@ link-libraries = [
 [target.weapon_stay_big_plugin]
 type = "plugin"
 sources = ["examples/weapon_stay_big_plugin/weapon_stay_big.cpp"]
+
+[target.mhws_tools_plugin]
+type = "plugin"
+sources = ["examples/mhws_tools_plugin/mhws_tools.cpp"]
+link-libraries = [
+    "lua",
+    "sol2"
+]

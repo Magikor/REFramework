@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\minhook\src\buffer.c">
+      <Filter>dependencies\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\minhook\src\hde\hde32.c">
+      <Filter>dependencies\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\minhook\src\hde\hde64.c">
+      <Filter>dependencies\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\minhook\src\hook.c">
+      <Filter>dependencies\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\minhook\src\trampoline.c">
+      <Filter>dependencies\minhook\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{0D002B5E-6FBC-3199-9767-27E954F443AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\minhook">
+      <UniqueIdentifier>{F55FE270-6BC7-3437-B328-70D09F283DE5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\minhook\src">
+      <UniqueIdentifier>{427CE217-701A-3A16-90B3-916BA79CF3A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\minhook\src\hde">
+      <UniqueIdentifier>{A2D379DE-E901-3E43-AD39-BDAAE835BA5A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

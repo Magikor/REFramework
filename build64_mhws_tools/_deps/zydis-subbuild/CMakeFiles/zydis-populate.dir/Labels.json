@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/zydis-populate"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/ad442fd5ad6aa8151df840afc623f2ed/zydis-populate.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/a4607d396d403a2709dd232171caf2bc/zydis-populate-complete.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-build.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-configure.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-download.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-install.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-patch.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-test.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/zydis-subbuild/CMakeFiles/c833a9bc1b1b77fc893c9e90b726f670/zydis-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"zydis-populate"
+		],
+		"name" : "zydis-populate"
+	}
+}

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\src\D3D11Hook.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\D3D12Hook.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\DInputHook.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\ExceptionHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\HookManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\Mods.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\REFramework.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\WindowFilter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\WindowsMessageHook.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\cimgui\cimgui.cpp">
+      <Filter>src\cimgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\APIProxy.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\BackBufferRenderer.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\Camera.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\DeveloperTools.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\FirstPerson.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\FreeCam.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\Graphics.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\Hooks.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\IntegrityCheckBypass.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\LooseFileLoader.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\ManualFlashlight.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\PluginLoader.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\REFrameworkConfig.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\Scene.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\ScriptRunner.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\VR.cpp">
+      <Filter>src\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\bindings\FS.cpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\bindings\ImGui.cpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\bindings\Json.cpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\bindings\Sdk.cpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\tools\ChainViewer.cpp">
+      <Filter>src\mods\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\tools\GameObjectsDisplay.cpp">
+      <Filter>src\mods\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\tools\ObjectExplorer.cpp">
+      <Filter>src\mods\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\Bindings.cpp">
+      <Filter>src\mods\vr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\D3D11Component.cpp">
+      <Filter>src\mods\vr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\D3D12Component.cpp">
+      <Filter>src\mods\vr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\OverlayComponent.cpp">
+      <Filter>src\mods\vr</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\d3d12\CommandContext.cpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\d3d12\ResourceCopier.cpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\d3d12\TextureContext.cpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\games\RE8VR.cpp">
+      <Filter>src\mods\vr\games</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\runtimes\OpenVR.cpp">
+      <Filter>src\mods\vr\runtimes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\mods\vr\runtimes\OpenXR.cpp">
+      <Filter>src\mods\vr\runtimes</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\re2-imgui\imgui_impl_dx11.cpp">
+      <Filter>src\re2-imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\re2-imgui\imgui_impl_dx12.cpp">
+      <Filter>src\re2-imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\re2-imgui\imgui_impl_win32.cpp">
+      <Filter>src\re2-imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\src\utility\ImGui.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MHWS\REFramework\src\D3D11Hook.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\D3D12Hook.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\DInputHook.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\ExceptionHandler.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\Genny.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\GennyIda.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\HookManager.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\LicenseStrings.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\Mod.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\Mods.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\REFramework.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\Tool.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\WindowFilter.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\WindowsMessageHook.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\cimgui\cimgui.h">
+      <Filter>src\cimgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\APIProxy.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\BackBufferRenderer.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\Camera.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\DeveloperTools.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\FirstPerson.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\FreeCam.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\Graphics.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\Hooks.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\IntegrityCheckBypass.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\LooseFileLoader.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\ManualFlashlight.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\PluginLoader.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\REFrameworkConfig.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\Scene.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\ScriptRunner.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\VR.hpp">
+      <Filter>src\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\bindings\FS.hpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\bindings\ImGui.hpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\bindings\Json.hpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\bindings\Sdk.hpp">
+      <Filter>src\mods\bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\spritefonts\Roboto.spritefont.h">
+      <Filter>src\mods\spritefonts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\tools\ChainViewer.hpp">
+      <Filter>src\mods\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\tools\GameObjectsDisplay.hpp">
+      <Filter>src\mods\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\tools\ObjectExplorer.hpp">
+      <Filter>src\mods\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\D3D11Component.hpp">
+      <Filter>src\mods\vr</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\D3D12Component.hpp">
+      <Filter>src\mods\vr</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\OverlayComponent.hpp">
+      <Filter>src\mods\vr</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\d3d12\ComPtr.hpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\d3d12\CommandContext.hpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\d3d12\ResourceCopier.hpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\d3d12\TextureContext.hpp">
+      <Filter>src\mods\vr\d3d12</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\games\RE8VR.hpp">
+      <Filter>src\mods\vr\games</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\runtimes\OpenVR.hpp">
+      <Filter>src\mods\vr\runtimes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\runtimes\OpenXR.hpp">
+      <Filter>src\mods\vr\runtimes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\mods\vr\runtimes\VRRuntime.hpp">
+      <Filter>src\mods\vr\runtimes</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\af_fadef.h">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\af_faprolight.hpp">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\font_robotomedium.hpp">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\imgui_impl_dx11.h">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\imgui_impl_dx12.h">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\imgui_impl_win32.h">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\re2-imgui\re2_imconfig.hpp">
+      <Filter>src\re2-imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\src\utility\ImGui.hpp">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{F14E7B7C-86D3-3766-AA10-27A05F85FE55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cimgui">
+      <UniqueIdentifier>{DEA2F6D2-E537-33F9-A8E2-F10D6DDDF8B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods">
+      <UniqueIdentifier>{C00ED90C-F3B5-3897-998B-D0A4E38A7E7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\bindings">
+      <UniqueIdentifier>{91892ED2-DAAF-335A-AD12-31680770AD6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\spritefonts">
+      <UniqueIdentifier>{06482BD1-E919-3281-AA6D-1A70019E9F1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\tools">
+      <UniqueIdentifier>{D36BCA57-62D1-3546-80A5-FD8AF110D967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\vr">
+      <UniqueIdentifier>{6B029783-FBBD-3BFF-85CC-F2130927580E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\vr\d3d12">
+      <UniqueIdentifier>{EFD60C9C-8C36-389F-954C-85E737FB6313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\vr\games">
+      <UniqueIdentifier>{3D4A0960-AA95-3195-8186-AC81968967FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mods\vr\runtimes">
+      <UniqueIdentifier>{63019F8C-9644-39EF-9AE5-6025DEC842A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\re2-imgui">
+      <UniqueIdentifier>{A47A3C9C-59D3-3228-ACB7-29ED6A465C25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility">
+      <UniqueIdentifier>{CE7675D9-943B-3BC4-8A0A-6A585C183A1C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

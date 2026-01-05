@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CTest.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CTestTargets.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CTestUseLaunchers.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/DartConfiguration.tcl.in
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Templates/CTestScript.cmake.in
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-src/CMakeLists.txt
+D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-src/build/DirectXTK-config.cmake.in

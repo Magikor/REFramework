@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\f840eae0de497f6b483d01ac7d19cb6f\openxr-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\50802b89b0a2cd721f551c3ac98188e8\openxr-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\c4c78a6f581c8a74c921fc73ff1cb747\openxr-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-subbuild\CMakeFiles\openxr-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{82F65479-0AE9-3C4D-868A-D66CDE92502C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

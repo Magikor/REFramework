@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-subbuild\CMakeFiles\a1a1eb48b400e1d331ebcc5cd3e33d45\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AF29AF6F-083C-3F6C-9803-8033047DF921}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

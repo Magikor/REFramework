@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\shared\utility\Exceptions.cpp">
+      <Filter>shared\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\shared\utility\FunctionHook.cpp">
+      <Filter>shared\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\shared\utility\FunctionHookMinHook.cpp">
+      <Filter>shared\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\shared\utility\Relocate.cpp">
+      <Filter>shared\utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MHWS\REFramework\shared\utility\Exceptions.hpp">
+      <Filter>shared\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\shared\utility\FunctionHook.hpp">
+      <Filter>shared\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\shared\utility\FunctionHookMinHook.hpp">
+      <Filter>shared\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\shared\utility\Relocate.hpp">
+      <Filter>shared\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shared">
+      <UniqueIdentifier>{5FEC9F9C-4CD2-36DC-9805-2CDBA337B7EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared\utility">
+      <UniqueIdentifier>{088A6CA7-52AA-3774-8A05-440E879463A2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

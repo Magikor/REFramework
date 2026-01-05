@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\async.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\bundled_fmtlib_format.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\cfg.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\color_sinks.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\file_sinks.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\spdlog.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\spdlog\src\stdout_sinks.cpp">
+      <Filter>dependencies\spdlog\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{0D002B5E-6FBC-3199-9767-27E954F443AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\spdlog">
+      <UniqueIdentifier>{5319E44D-7944-3E23-BC4F-736EE507581C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\spdlog\src">
+      <UniqueIdentifier>{ABFEF0CA-4A4D-33C7-805C-B19B660B36A4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

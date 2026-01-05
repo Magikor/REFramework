@@ -1,0 +1,1140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13FEFE95-F625-390F-B661-529AE8321771}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>RE7SDK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RE7SDK.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RE7SDK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MHWS\REFramework\build64_mhws_tools\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RE7SDK.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RE7SDK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MHWS\REFramework\build64_mhws_tools\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RE7SDK.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RE7SDK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MHWS\REFramework\build64_mhws_tools\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RE7SDK.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RE7SDK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RE7;SPDLOG_COMPILED_LIB;ZYDIS_STATIC_BUILD;ZYCORE_STATIC_BUILD;BDDISASM_HAS_VSNPRINTF;BDDISASM_HAS_MEMSET;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\shared;D:\MHWS\REFramework\include;D:\MHWS\REFramework\dependencies\glm;D:\MHWS\REFramework\dependencies\spdlog\include;D:\MHWS\REFramework\dependencies\minhook\include;D:\MHWS\REFramework\dependencies\minhook\src\hde;D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-src\dependencies\zycore\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore;D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-src\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/MHWS/REFramework/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCXXCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeRCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake;D:\MHWS\REFramework\cmake.toml;D:\MHWS\REFramework\cmkr.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/MHWS/REFramework/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCXXCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeRCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake;D:\MHWS\REFramework\cmake.toml;D:\MHWS\REFramework\cmkr.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/MHWS/REFramework/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCXXCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeRCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake;D:\MHWS\REFramework\cmake.toml;D:\MHWS\REFramework\cmkr.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/MHWS/REFramework/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeCXXCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeRCCompiler.cmake;D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake;D:\MHWS\REFramework\cmake.toml;D:\MHWS\REFramework\cmkr.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MHWS\REFramework\build64_mhws_tools\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml">
+    </None>
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\Application.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\Application.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\Enums_Internal.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\GUIPrimitiveSystem.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\GUIPrimitiveSystem.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\ManagedObject.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\Math.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\Memory.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\Memory.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\MotionFsm2Layer.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\MotionFsm2Layer.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\MurmurHash.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\MurmurHash.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REArray.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REComponent.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REContext.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REContext.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REDelegate.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REDelegate.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REGameObject.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REGameObject.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REGlobals.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REGlobals.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REManagedObject.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REMath.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RENativeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REString.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\RETransform.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RETransform.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REType.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RETypeCLR.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\RETypeDB.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RETypeDB.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\RETypeDefinition.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RETypeDefinition.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\RETypes.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RETypes.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\REVTableHook.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REVTableHook.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\REVariableDescriptor.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_DD2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_DMC5.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_MHWILDS.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_PRAGMATA.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_RE2_TDB70.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_RE3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_RE3_TDB70.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_RE4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_RE7.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_RE8.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ReClass_Internal_SF6.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\Renderer.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\Renderer.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\ResourceManager.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\ResourceManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\RopewaySweetLightManager.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\SDK.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\SDK.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\SF6Utility.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\SF6Utility.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\SceneManager.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\SceneManager.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\SystemArray.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\SystemArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\TDBVer.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\helpers\NativeObject.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\helpers\NativeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\intrusive_ptr.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\BullShit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\RTInternal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\RayTrace.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\RenderEntity.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\AttributeDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\Field.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\FieldImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\MethodImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\ParamList.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\ParameterDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\Property.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\PropertyImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\tdb71\TypeImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\IntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\JobSet.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\ManagedObjectArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Object.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\UInt8Array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\UIntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\UIntArrayArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\BehaviorTree.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\BehaviorTreeCoreHandleArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\BehaviorTreeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\Condition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\Core.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\CoreHandle.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\NodeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\NodeArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\NodeStatus.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\Selector.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\SelectorFSM.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\TreeNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\TreeNodeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\TreeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\behaviortree\TreeObjectData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\fixed_array_jobs.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\Control.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\GUI.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\GUIManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\GUIMeshRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\PlayObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\PrimitiveContext.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\TransformObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\View.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\gui\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\ChainCollisionTop.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\Data.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\InterpolationMode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\MotionFsm2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\MotionFsm2Internal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\MotionFsm2Layer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\MotionFsm2RawData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\MotionFsm2Resource.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\TransitionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\motion\TransitionMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\dd2\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\OBB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\AttributeDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\Field.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\FieldImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\MethodImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\ParamList.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\ParameterDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\Property.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\PropertyImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\tdb71\TypeImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\IntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\ManagedObjectArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\UInt8Array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\UIntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\UIntArrayArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\BehaviorTree.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\BehaviorTreeCoreHandleArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\Condition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\Core.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\CoreHandle.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\NodeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\NodeArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\NodeStatus.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\Selector.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\SelectorFSM.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\TreeNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\TreeNodeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\TreeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\behaviortree\TreeObjectData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\ChainCollisionTop.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\MotionFsm2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\MotionFsm2Layer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\mhrise_tdb71\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\BullShit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\AttributeDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\Field.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\FieldImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\MethodImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\ParamList.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\ParameterDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\Property.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\PropertyImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\tdb67\TypeImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\JobSet.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\ManagedObjectArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\OBB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Object.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Plane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\BehaviorTree.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\BehaviorTreeCoreHandleArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\Condition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\Core.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\CoreHandle.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\NodeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\NodeStatus.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\Selector.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\TreeNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\TreeNodeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\TreeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\behaviortree\TreeObjectData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\fixed_array_jobs.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\Control.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\GUI.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\GUIManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\GUIMeshRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\PlayObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\PrimitiveContext.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\TransformObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\View.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\gui\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\ChainCollisionTop.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\MotionFsm2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\MotionFsm2Layer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re2_tdb70\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\tdb67\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\tdb67\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\OBB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\BehaviorTree.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\BehaviorTreeCoreHandleArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\BehaviorTreeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\Condition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\Core.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\CoreHandle.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\IntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\ManagedObjectArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\NodeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\NodeArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\NodeStatus.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\Selector.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\SelectorFSM.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\TreeNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\TreeNodeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\TreeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\TreeObjectData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\UInt8Array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\behaviortree\UIntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\Data.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\MotionFsm2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\MotionFsm2Internal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\MotionFsm2Layer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\MotionFsm2RawData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\MotionFsm2Resource.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\TransitionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\motion\TransitionMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re3\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\BullShit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\RTInternal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\RayTrace.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\RenderEntity.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\AttributeDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\Field.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\FieldImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\MethodImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\ParamList.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\ParameterDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\Property.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\PropertyImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\tdb71\TypeImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\IntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\JobSet.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\ManagedObjectArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Object.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\UInt8Array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\UIntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\UIntArrayArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\BehaviorTree.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\BehaviorTreeCoreHandleArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\BehaviorTreeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\Condition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\Core.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\CoreHandle.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\NodeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\NodeArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\NodeStatus.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\Selector.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\SelectorFSM.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\TreeNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\TreeNodeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\TreeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\behaviortree\TreeObjectData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\fixed_array_jobs.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\Control.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\GUI.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\GUIManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\GUIMeshRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\PlayObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\PrimitiveContext.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\TransformObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\View.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\gui\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\ChainCollisionTop.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\Data.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\InterpolationMode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\MotionFsm2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\MotionFsm2Internal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\MotionFsm2Layer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\MotionFsm2RawData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\MotionFsm2Resource.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\TransitionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\motion\TransitionMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\render\RenderOutput.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\render\SceneArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\render\layer\PrepareOutput.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re4\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\BullShit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\RenderDeviceDX11.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\StdMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\StdMapData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\StdMapNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\System\Type.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\TypeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\Unk.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\Event.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\FieldDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\MethodParam.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\Module.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\PropertyDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb49\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb67\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\tdb67\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Application.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Entry.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\JobSet.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Object.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\clr\VM.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\delegate.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\dictionary.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\fixed_array_jobs.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\Control.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\GUI.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\GUIManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\GUIMeshRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\PlayObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\PrimitiveContext.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\TransformObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\View.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\gui\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\reflection\Method.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\reflection\MethodArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\reflection\Property.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\reflection\PropertyArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\reflection\Reflection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\LayerList.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\LightRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\OutputTargetState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\OutputTargetStateDX11.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\OutputTargetStateDX12.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\RenderLayer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\RenderResource.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\RenderTargetView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\RenderTargetViewDX11.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\RenderTargetViewDX12.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\Renderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\TargetDescriptorDX11.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\TargetDescriptorDX12.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\render\layer\Output.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\typeinfo\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\typeinfo\Deserializer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\typeinfo\TypeInfoCLR.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re7\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\tdb67\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\tdb67\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\JobSet.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\OBB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Object.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Plane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\fixed_array_jobs.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\Control.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\GUI.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\GUIManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\GUIMeshRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\PlayObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\PrimitiveContext.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\TransformObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\View.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\gui\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\ChainCollisionTop.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\re8\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\BullShit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\DeserializeSequence.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\ManagedVtable.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\RTInternal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\RayTrace.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\RenderEntity.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\System\String.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\game\IkArmFit.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\game\InputSystem.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\AttributeDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\Field.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\FieldImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\MethodDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\MethodImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\ParamList.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\ParameterDef.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\Property.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\PropertyImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\TDB.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\TypeDefinition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\tdb71\TypeImpl.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\BasisPlane.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\CameraType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Capsule.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Color.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Component.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\DeviceOrientation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\DisplayType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Folder.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\GameObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\IntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\JobSet.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Joint.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\JointArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\JointData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\JointDesc.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\JointMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\ManagedObjectArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\MobileBarState.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Motion.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Object.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Point.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Range.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\RenderType.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Scene.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\SceneArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\SceneManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\SceneView.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Size.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Sphere.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Transform.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\UInt8Array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\UIntArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\UIntArrayArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\array.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\BehaviorTree.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\BehaviorTreeCoreHandleArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\BehaviorTreeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\Condition.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\Core.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\CoreHandle.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\NodeArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\NodeArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\NodeStatus.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\Selector.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\SelectorFSM.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\TreeNode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\TreeNodeData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\TreeObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\behaviortree\TreeObjectData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\clr\ManagedObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\fixed_array_jobs.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\Control.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\GUI.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\GUIManager.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\GUIMeshRenderer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\PlayObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\PrimitiveContext.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\TransformObject.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\View.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\gui\Window.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\mat4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\AxisDirection.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\Chain.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\ChainCollisionArray.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\ChainCollisionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\ChainCollisionTop.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\ChainCollisions.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\Data.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\InterpolationMode.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\MotionFsm2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\MotionFsm2Internal.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\MotionFsm2Layer.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\MotionFsm2RawData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\MotionFsm2Resource.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\SecondaryAnimation.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\TransitionData.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\motion\TransitionMap.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\render\RenderOutput.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\render\SceneArray2.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\render\layer\PrepareOutput.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\typeinfo\TypeInfo.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\vec3.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\regenny\sf6\via\vec4.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\renderer\PipelineState.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\renderer\RenderResource.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\renderer\RenderResource.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\resources\MasterMaterialResource.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\resources\MasterMaterialResource.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\shared\sdk\resources\ShaderResource.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\shared\sdk\resources\ShaderResource.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\ZERO_CHECK.vcxproj">
+      <Project>{68714C0C-9D15-3C86-BCA3-D144383AA09D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\zycore\Zycore.vcxproj">
+      <Project>{C50728EC-8007-34B6-BD38-D186AC9B61A9}</Project>
+      <Name>Zycore</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\zydis-build\Zydis.vcxproj">
+      <Project>{C2B70525-C8F7-377B-9001-BF4A906FA9A8}</Project>
+      <Name>Zydis</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-build\bddisasm.vcxproj">
+      <Project>{E530CC3B-F452-364C-B8E6-34902E820ACB}</Project>
+      <Name>bddisasm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\glm_static.vcxproj">
+      <Project>{327F8752-F4F5-315E-B4D1-8D931139DBAD}</Project>
+      <Name>glm_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-build\kananlib.vcxproj">
+      <Project>{72D1E9B4-99FF-3274-B237-657696F29933}</Project>
+      <Name>kananlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\minhook.vcxproj">
+      <Project>{6AF1AF5B-0A8E-3741-941F-70548B350062}</Project>
+      <Name>minhook</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\safetyhook-build\safetyhook.vcxproj">
+      <Project>{6F35A46B-BF81-3239-A427-55E09C3FECFE}</Project>
+      <Name>safetyhook</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\spdlog.vcxproj">
+      <Project>{2A2BDF38-BBD0-358A-B6B4-F195600792AA}</Project>
+      <Name>spdlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\utility.vcxproj">
+      <Project>{04F2A1CF-D80E-391F-93D8-B237A75DCE25}</Project>
+      <Name>utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

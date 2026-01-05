@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Address.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Emulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Patch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Pattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\PointerHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\RTTI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Scan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\Thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\src\VtableHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Address.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Benchmark.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Emulation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Input.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Logging.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Module.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Patch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Pattern.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\PointerHook.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\RTTI.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Registry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Scan.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\ScopeGuard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\String.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\Thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\VtableHook.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\thirdparty\InstructionSet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\include\utility\thirdparty\parallel-util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\kananlib-src\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CC7085D4-4E45-3A47-A753-6ECE229A0E1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{02E0771E-F7F7-3694-816E-729490B8266A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

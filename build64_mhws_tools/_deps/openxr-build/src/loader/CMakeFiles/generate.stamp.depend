@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/CMakeLists.txt
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/OpenXRConfig.cmake.in

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\examples\example_plugin\Plugin.cpp">
+      <Filter>examples\example_plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\examples\example_plugin\imgui\imgui_impl_dx11.cpp">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\examples\example_plugin\imgui\imgui_impl_dx12.cpp">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\examples\example_plugin\imgui\imgui_impl_win32.cpp">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\examples\example_plugin\rendering\d3d11.cpp">
+      <Filter>examples\example_plugin\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\examples\example_plugin\rendering\d3d12.cpp">
+      <Filter>examples\example_plugin\rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\Plugin.hpp">
+      <Filter>examples\example_plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\imgui\font_robotomedium.hpp">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\imgui\imgui_impl_dx11.h">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\imgui\imgui_impl_dx12.h">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\imgui\imgui_impl_win32.h">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\imgui\re2_imconfig.hpp">
+      <Filter>examples\example_plugin\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\rendering\d3d11.hpp">
+      <Filter>examples\example_plugin\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\rendering\d3d12.hpp">
+      <Filter>examples\example_plugin\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MHWS\REFramework\examples\example_plugin\rendering\shared.hpp">
+      <Filter>examples\example_plugin\rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{64A09508-0C8F-3655-B426-940C91380BE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\example_plugin">
+      <UniqueIdentifier>{D87F6FFC-E5BE-385A-9613-8C2C4924D037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\example_plugin\imgui">
+      <UniqueIdentifier>{A69C8C41-780B-3065-B23C-0A6DB8FCD85D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\example_plugin\rendering">
+      <UniqueIdentifier>{88245701-7B55-30B4-A71B-C7CA2CFB60FB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

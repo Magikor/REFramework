@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\6a86cf7e9f9cd70efe40b85a370d8bf0\asmjit-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\69d9b71163dd56040dd527541cd2f322\asmjit-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\f87d5d87608465dc82ecf9f3b7b25056\asmjit-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\asmjit-subbuild\CMakeFiles\asmjit-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E10FFDF-BC2E-36BB-9EED-12112BBB0F7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

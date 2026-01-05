@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imnodes\imnodes.cpp">
+      <Filter>dependencies\imnodes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{0D002B5E-6FBC-3199-9767-27E954F443AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\imnodes">
+      <UniqueIdentifier>{339E1C47-C5AE-31D6-8CF4-9D6C612B3D27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

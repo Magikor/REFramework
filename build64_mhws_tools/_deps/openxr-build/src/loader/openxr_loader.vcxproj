@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6F93E2E-A6B3-3029-8C33-DBCA5F05B9B1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>openxr_loader</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openxr_loader.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openxr_loaderd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openxr_loader.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openxr_loader</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openxr_loader.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openxr_loader</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openxr_loader.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openxr_loader</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>6386</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;API_NAME="OpenXR";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR="Debug";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;API_NAME=\"OpenXR\";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR=\"Debug\";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\Debug\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\Debug\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\Debug\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\Debug\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\Debug\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Debug\openxr_loaderd.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\Debug\
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/Debug/openxr_loaderd.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/openxr-loader.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/Debug/openxr_loaderd.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>6386</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;API_NAME="OpenXR";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR="Release";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;API_NAME=\"OpenXR\";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR=\"Release\";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\Release\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\Release\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\Release\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\Release\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\Release\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\Release\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\Release\
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/Release/openxr_loader.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/openxr-loader.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/Release/openxr_loader.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>6386</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;API_NAME="OpenXR";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR="MinSizeRel";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;API_NAME=\"OpenXR\";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\MinSizeRel\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\MinSizeRel\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\MinSizeRel\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\MinSizeRel\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\MinSizeRel\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\MinSizeRel\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\MinSizeRel\
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/MinSizeRel/openxr_loader.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/openxr-loader.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/MinSizeRel/openxr_loader.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>6386</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;API_NAME="OpenXR";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR="RelWithDebInfo";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;API_NAME=\"OpenXR\";XR_USE_GRAPHICS_API_OPENGL;XR_OS_WINDOWS;NOMINMAX;XR_USE_PLATFORM_WIN32;XR_USE_GRAPHICS_API_D3D11;XR_USE_GRAPHICS_API_D3D12;OPENXR_HAVE_COMMON_CONFIG;XR_USE_TIMESPEC;XR_CURRENT_API_MAJOR_VERSION=1;XR_CURRENT_API_MINOR_VERSION=0;XR_CURRENT_API_PATCH_VERSION=22;XRAPI_DLL_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";openxr_loader_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\..\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\RelWithDebInfo\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\hello_xr\RelWithDebInfo\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\RelWithDebInfo\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\tests\loader_test\RelWithDebInfo\
+if %errorlevel% neq 0 goto :cmEnd
+xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.dll D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\RelWithDebInfo\
+if %errorlevel% neq 0 goto :cmEnd
+if exist D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.pdb xcopy /Y /I D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\RelWithDebInfo\openxr_loader.pdb D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\..\conformance\conformance_test\RelWithDebInfo\
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/RelWithDebInfo/openxr_loader.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/openxr-loader.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/RelWithDebInfo/openxr_loader.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\OpenXRConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\OpenXRConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\OpenXRConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/loader/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework -BD:/MHWS/REFramework/build64_mhws_tools --check-stamp-file D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-build/src/loader/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\OpenXRConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\loader\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\android_utilities.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\android_utilities.h" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\api_layer_interface.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\api_layer_interface.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_core.cpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_instance.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_instance.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_logger.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_logger.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_logger_recorders.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader_logger_recorders.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\manifest_file.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\manifest_file.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\runtime_interface.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\runtime_interface.hpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\xr_generated_dispatch_table.h" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\xr_generated_dispatch_table.c" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\xr_generated_loader.hpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\xr_generated_loader.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common\hex_and_handles.h" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common\object_info.cpp" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common\object_info.h" />
+    <ClInclude Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common\platform_utils.hpp" />
+    <ResourceCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\loader.rc" />
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\loader\openxr-loader.def" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\external\jsoncpp\src\lib_json\json_writer.cpp" />
+    <ClCompile Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-src\src\common\filesystem_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\ZERO_CHECK.vcxproj">
+      <Project>{68714C0C-9D15-3C86-BCA3-D144383AA09D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\include\openxr\generate_openxr_header.vcxproj">
+      <Project>{618079D5-8EB3-3D04-BDC3-7EE82DB342AB}</Project>
+      <Name>generate_openxr_header</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\openxr-build\src\xr_global_generated_files.vcxproj">
+      <Project>{332C2B7B-17CD-328B-B151-82DBC9F39A3A}</Project>
+      <Name>xr_global_generated_files</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

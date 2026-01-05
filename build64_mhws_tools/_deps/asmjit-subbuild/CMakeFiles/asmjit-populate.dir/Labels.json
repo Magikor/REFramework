@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/asmjit-populate"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/f87d5d87608465dc82ecf9f3b7b25056/asmjit-populate.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/69d9b71163dd56040dd527541cd2f322/asmjit-populate-complete.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-build.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-configure.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-download.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-install.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-patch.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-test.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/asmjit-subbuild/CMakeFiles/6a86cf7e9f9cd70efe40b85a370d8bf0/asmjit-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"asmjit-populate"
+		],
+		"name" : "asmjit-populate"
+	}
+}

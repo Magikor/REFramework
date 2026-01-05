@@ -1,0 +1,10 @@
+^D:\MHWS\REFRAMEWORK\BUILD64_MHWS_TOOLS\_DEPS\DIRECTXTK12-SUBBUILD\CMAKEFILES\1E6B592B20E0D815B89EA09A86E86175\GENERATE.STAMP.RULE
+setlocal
+C:\PROGRA~2\MICROS~2\18\BUILDT~1\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild -BD:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk12-subbuild/directxtk12-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

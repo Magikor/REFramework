@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/FindPythonInterp.cmake
+C:/PROGRA~2/MICROS~2/18/BUILDT~1/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/CMakeLists.txt
+D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-src/src/cmake/cmake_uninstall.cmake.in

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/MHWS/REFramework/build64_mhws_tools/_deps/openxr-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

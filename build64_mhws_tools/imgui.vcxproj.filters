@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imgui\imgui.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imgui\imgui_demo.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imgui\imgui_draw.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imgui\imgui_tables.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imgui\imgui_widgets.cpp">
+      <Filter>dependencies\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MHWS\REFramework\dependencies\imgui\misc\freetype\imgui_freetype.cpp">
+      <Filter>dependencies\imgui\misc\freetype</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\cmake.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{0D002B5E-6FBC-3199-9767-27E954F443AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\imgui">
+      <UniqueIdentifier>{D201D71A-4CB4-312B-A1AD-7068D9A7A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\imgui\misc">
+      <UniqueIdentifier>{FDAB1DF5-82B2-38B3-AAF6-21C6E9A42071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\imgui\misc\freetype">
+      <UniqueIdentifier>{FF5D9E79-32B1-3E07-898A-C0260464D560}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

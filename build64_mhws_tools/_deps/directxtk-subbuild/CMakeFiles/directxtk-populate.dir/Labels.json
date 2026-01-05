@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/directxtk-populate"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/2b8d4c77f3a03d5c336c079a9720e65c/directxtk-populate.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/0105444a87ba578f2354aa6233d45979/directxtk-populate-complete.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-build.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-configure.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-download.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-install.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-patch.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-test.rule"
+		},
+		{
+			"file" : "D:/MHWS/REFramework/build64_mhws_tools/_deps/directxtk-subbuild/CMakeFiles/813c3be93b5018e90c701b345897f063/directxtk-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"directxtk-populate"
+		],
+		"name" : "directxtk-populate"
+	}
+}

@@ -14851,3 +14851,44 @@ if(REF_BUILD_FRAMEWORK AND CMAKE_SIZEOF_VOID_P EQUAL 8) # build-framework
 	)
 
 endif()
+# Target: mhws_tools_plugin
+if(REF_BUILD_FRAMEWORK AND CMAKE_SIZEOF_VOID_P EQUAL 8) # build-framework
+	set(mhws_tools_plugin_SOURCES
+		cmake.toml
+		"examples/mhws_tools_plugin/mhws_tools.cpp"
+	)
+
+	add_library(mhws_tools_plugin SHARED)
+
+	target_sources(mhws_tools_plugin PRIVATE ${mhws_tools_plugin_SOURCES})
+	source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${mhws_tools_plugin_SOURCES})
+
+	target_compile_features(mhws_tools_plugin PUBLIC
+		cxx_std_23
+	)
+
+	target_include_directories(mhws_tools_plugin PUBLIC
+		"include/"
+	)
+
+	target_link_libraries(mhws_tools_plugin PUBLIC
+		lua
+		sol2
+	)
+
+	set_target_properties(mhws_tools_plugin PROPERTIES
+		RUNTIME_OUTPUT_DIRECTORY_RELEASE
+			"${CMAKE_BINARY_DIR}/bin/${CMKR_TARGET}"
+		RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO
+			"${CMAKE_BINARY_DIR}/bin/${CMKR_TARGET}"
+		LIBRARY_OUTPUT_DIRECTORY_RELEASE
+			"${CMAKE_BINARY_DIR}/lib/${CMKR_TARGET}"
+		LIBRARY_OUTPUT_DIRECTORY_RELWITHDEBINFO
+			"${CMAKE_BINARY_DIR}/lib/${CMKR_TARGET}"
+		ARCHIVE_OUTPUT_DIRECTORY_RELEASE
+			"${CMAKE_BINARY_DIR}/lib/${CMKR_TARGET}"
+		ARCHIVE_OUTPUT_DIRECTORY_RELWITHDEBINFO
+			"${CMAKE_BINARY_DIR}/lib/${CMKR_TARGET}"
+	)
+
+endif()

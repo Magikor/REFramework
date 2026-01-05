@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\c2696c777d1f150f33df21d6b7f3734f\bddisasm-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\df8e556c69384fa6ca2f80f65864cf84\bddisasm-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\3f2436e8ef96395b6e87b4a826c18208\bddisasm-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\MHWS\REFramework\build64_mhws_tools\_deps\bddisasm-subbuild\CMakeFiles\bddisasm-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{515BEF13-1149-3F69-8972-990DD9E5FCD5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
