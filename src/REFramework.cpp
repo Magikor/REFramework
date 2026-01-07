@@ -1698,6 +1698,17 @@ void REFramework::draw_about() {
 
     ImGui::TreePush("About");
 
+    struct TreePopOnExit {
+        bool active{false};
+        ~TreePopOnExit() {
+            if (active) {
+                ImGui::TreePop();
+            }
+        }
+    };
+
+    [[maybe_unused]] TreePopOnExit about_tree_pop{true};
+
     ImGui::Text("Author: praydog");
     ImGui::Text("Inspired by the Kanan project.");
     ImGui::Text("https://github.com/praydog/REFramework");
@@ -1713,6 +1724,7 @@ void REFramework::draw_about() {
     ImGui::Text("Build time: %s", REF_BUILD_TIME);
 
     if (ImGui::TreeNode("Licenses")) {
+        [[maybe_unused]] TreePopOnExit licenses_tree_pop{true};
         struct License {
             std::string name;
             std::string text;
@@ -1742,8 +1754,6 @@ void REFramework::draw_about() {
                 ImGui::TextWrapped(license.text.c_str());
             }
         }
-
-        ImGui::TreePop();
     }
 
     ImGui::Separator();
@@ -1790,7 +1800,6 @@ void REFramework::draw_about() {
         ImGui::Text("Unable to determine engine version.");
     }
 
-    ImGui::TreePop();
 }
 
 void REFramework::set_imgui_style() noexcept {
